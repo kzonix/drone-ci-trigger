@@ -1,9 +1,12 @@
-# Create a JavaScript Action
+# DroneCI Build Trigger Action
 
-<p align="center">
-  <a href="https://github.com/actions/javascript-action/actions"><img alt="javscript-action status" src="https://github.com/actions/javascript-action/workflows/units-test/badge.svg"></a>
-</p>
+Trigger Drone CI build via API. Drone provides a comprehensive remote API for interacting with the Drone server.
+The remote API uses access tokens to authorize requests. You can retrieve an access token in the Drone user interface by navigating to your user profile.
+ 
+ - Trigger build
+ - Check build status to hold GitHub Action pipeline until DroneCI build will be finished.
 
+----
 Use this template to bootstrap the creation of a JavaScript action.:rocket:
 
 This template includes tests, linting, a validation workflow, publishing, and versioning guidance.
