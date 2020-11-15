@@ -1,6 +1,8 @@
 name: 'DroneCI Build Trigger'
-icon: 'settings'
 description: 'Trigger Drone CI build via API'
+branding:
+  icon: 'settings'
+  color: blue
 inputs:
   droneApiUrl:
     description: 'URL of API for interacting with the Drone server. Example: http://localhost:8080/api'
