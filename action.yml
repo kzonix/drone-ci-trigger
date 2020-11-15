@@ -1,10 +1,14 @@
-name: 'Wait'
-description: 'Wait a designated number of milliseconds'
+name: 'DroneCI Build Trigger'
+description: 'Trigger Drone CI build via API'
 inputs:
-  milliseconds:  # id of input
-    description: 'number of milliseconds to wait'
+  droneApiUrl:
+    description: 'URL of API for interacting with the Drone server. Example: http://localhost:8080/api'
     required: true
-    default: '1000'
+    default: 'http://drone.recursive-escalator.io/api'
+  droneApiToken:
+    description: 'Drone API Personal Token'
+    required: true
+
 outputs:
   time: # output will be available to future steps
     description: 'The message to output'

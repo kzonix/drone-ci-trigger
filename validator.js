@@ -1,4 +1,6 @@
-let wait = function (milliseconds) {
+const core = require('@actions/core');
+
+let validator = function ({ url, apiToken, repo }) {
   return new Promise((resolve) => {
     if (typeof milliseconds !== 'number') {
       throw new Error('milliseconds not a number');
@@ -7,4 +9,4 @@ let wait = function (milliseconds) {
   });
 };
 
-module.exports = wait;
+module.exports = validator;
