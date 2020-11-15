@@ -1,5 +1,5 @@
 name: 'DroneCI Build Trigger'
-icon: settings
+icon: 'settings'
 description: 'Trigger Drone CI build via API'
 inputs:
   droneApiUrl:
