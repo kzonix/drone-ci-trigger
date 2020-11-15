@@ -8,10 +8,10 @@ async function run() {
     const apiUrl = core.getInput('droneApiUrl');
     const apiToken = core.getInput('droneApiToken');
 
-    const payload = JSON.stringify(github.context.payload, undefined, 2)
+    const payload = JSON.stringify(context.payload, undefined, 2)
     console.log(`The event payload: ${payload}`);
 
-    const ctx = JSON.stringify(github.context, undefined, 2)
+    const ctx = JSON.stringify(context, undefined, 2)
     console.log(`The event payload: ${ctx}`);
 
     core.debug((new Date()).toTimeString()); // debug is only output if you set the secret `ACTIONS_RUNNER_DEBUG` to true
