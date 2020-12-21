@@ -29,8 +29,8 @@
     "@actions/github": "^4.0.0"
   },
   "devDependencies": {
-    "@vercel/ncc": "^0.26.0",
-    "eslint": "^7.15.0",
+    "@vercel/ncc": "^0.26.1",
+    "eslint": "^7.16.0",
     "jest": "^26.1.0"
   }
 }
